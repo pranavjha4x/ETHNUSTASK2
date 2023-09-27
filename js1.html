@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1>JavaScript Example</h1>
+    
+    <!-- Include your JavaScript code here -->
+    <script>
+        function sortStringAlphabetically(inputString) {
+          const sortedString = inputString.split('').sort().join('');
+          return sortedString;
+        }
+
+        const inputString = 'webmaster';
+        const sorted = sortStringAlphabetically(inputString);
+
+        // Display the result in an alert dialog
+        alert("Input: " + inputString + "\nAlphabetically Sorted Output: " + sorted);
+    </script>
+</body>
+</html>

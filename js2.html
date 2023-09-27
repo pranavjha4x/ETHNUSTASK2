@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Example2</title>
+</head>
+<body>
+    <h1>JavaScript Example2</h1>
+    
+    <!-- Include your JavaScript code here -->
+    <script>
+       function reverseNumber(x) {
+  // Convert the number to a string
+  const numStr = x.toString();
+
+  // Reverse the string
+  const reversedStr = numStr.split('').reverse().join('');
+
+  // Convert the reversed string back to a number
+  const reversedNum = parseInt(reversedStr, 10);
+
+  return reversedNum;
+}
+
+// Sample data
+const x = 32243;
+
+// Call the function and display the result
+const reversed = reverseNumber(x);
+console.log("Input:", x);
+console.log("Reversed Output:", reversed);
+
+    </script>
+</body>
+</html>
